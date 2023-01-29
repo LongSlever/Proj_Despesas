@@ -1,0 +1,126 @@
+<html>
+	<head>
+    <meta charset="utf-8" />
+		<title>Orçamento pessoal</title>
+
+		<!-- Bootstrap início -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	</head>
+
+  <body onload="carregarDados()">
+<!-- Estilo Personalizado -->
+    <style>
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .nav-perso {
+           background-color:rgb(123, 87, 255);
+        }
+        
+        .principal {
+            border-radius: 25px;
+            padding: 25px;
+            border: 1px solid rgb(123, 87, 255);
+            box-shadow: 5px 5px 8px rgba(123, 87, 255, 0.4);
+        }
+
+        .dados {    
+            border-radius: 25px;
+            padding: 25px;
+            background: rgba(123, 87, 255, 0.2);
+        }
+
+        .dados label {
+            text-transform: uppercase;
+            color: white;
+            border-radius: 5px;
+            width: 70%;
+            padding: 10px;
+            font-size: 1.3em;
+            background: rgba(123, 87, 255, 0.7);
+        }
+
+        .dados h4 {
+            font-size: 1em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+    </style>
+<!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 nav-perso">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+           <img  src="imagens/logo.png" width="50" height="35" alt="Orçamento pessoal">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">Consulta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="perfil.html">Perfil</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+<!-- Fim Barra de Navegação -->
+
+
+<!-- Div informações do perfil  -->
+    <div class="container ">
+        <h1 class="text-center"> Seu perfil</h1>
+      <div class="row mt-5 principal">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+            <img width="250" src="imagens/foto_perfil.png" alt="">
+        </div>
+        <div class="col-md-8 dados">
+            <div>
+            <label for="">Nome</label>
+            <h4 id="nome">Nome </h4>
+            <label for="">Email</label>
+            <h4 id="email">Email </h4>
+            <label for="">CPF</label>
+            <h4 id="cpf">CPF</h4>
+            <label for="">Salario</label>
+            <h4 id="salario">Salario</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Fim Div informações do perfil  -->
+<!-- Modal Sucesso -->
+
+    </div>
+  <!-- Script personalizado, fontawesome e jquery do bootstrap -->
+    <script src="javascript/login_cadastre.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>	
+
+</html>

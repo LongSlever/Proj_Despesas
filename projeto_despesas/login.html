@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login - Despesas</title>
+</head>
+<body>
+
+
+    <!-- Estilos Personalizados -->
+    <style>
+        body, html{
+            height: 100%;
+            background: rgb(199,228,10);
+            background: radial-gradient(circle, rgba(199,228,10,1) 0%, rgba(18,39,236,1) 95%);
+        }
+        #home {
+            height: 100%;
+            
+        }
+
+        .formulario {
+            width: 100%;
+            background: #fff;
+            border-radius: 0 0 25px 25px;
+            padding: 25px;
+            margin: 0 15px 0 15px;
+        }
+
+        .formulario a {
+            color: black;
+        }
+
+        .formulario button {
+            border-radius: 25px;
+        }
+        .formulario button:hover {
+            background: rgba(199,199,245,0.5);
+            
+        }
+        .duvidas {
+           margin-top: 5px;
+        }
+        .esconder {
+            display: none;
+        }
+
+    </style>
+
+    <!-- Inicio Container Conteudos -->
+    <div id="home" class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="row ">
+            <!-- Imagem -->
+            <div class="col-md-12 imagem">
+                <img class="img-fluid" src="imagens/foto_login.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!--   Formulario  -->
+        <div class="row formulario">
+            <div class="col-md-12">
+                <h2 class="text-center"> Faça Login </h2> 
+                <!-- Inpusts de login -->
+                <input id="login" class="form-control mb-2" type="text" placeholder="Digite seu email">
+                <input id="senha" class="form-control mb-2" type="password" placeholder="Digite sua senha">
+                <div id="erro" class="esconder">
+                    <p class="">Seu email ou sua senha está errada
+                    </p>
+                </div>
+                <button onclick="verificarRegistro()" class="btn btn-block"> Logar  </button>
+                <div class="duvidas text-center">
+                <a class="mr-2" href="cadastro.html">Cadastre-se </a>
+                <a href="">Esqueci a senha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Script personalizado, fontawesome e jquery do bootstrap -->
+    <script src="javascript/login_cadastre.js"></script>
+    <script src="https://kit.fontawesome.com/ccd0f1f5c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
